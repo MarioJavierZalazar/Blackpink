@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+:root {
+    --primary: #f8a5be;
+    --negative: #111111;
+    --positive: #f2f2f2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: "Lato", sans-serif;
+    background-color: var(--negative);
+    line-height: 1.75;
+    color: var(--positive);
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* HEADER */
+.banner {   
+    width: 800px;
+    margin: 60px auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    display: none;
+}
+
+nav {
+    background-color: var(--primary);
+    margin-bottom: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--negative);
+    font-weight: 900;
+    display: inline-block;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--negative);
+    color: var(--primary);
+}
+
+
+/* MAIN */
+h1, h2, h3, h4, strong {
+    color: var(--primary);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding-bottom: 20px;
+    border-bottom: solid 5px var(--primary);
+    margin-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+p {
+    margin-bottom: 20px;
+}
+
+
+/* INTEGRANTES */
+
+.photo {
+    width: 300px;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.integranteCard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.description {
+    width: 600px;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+/* HISTORIA */
+
+.photoHistory {
+    width: 400px;
+    margin: 40px auto;
+
+}
