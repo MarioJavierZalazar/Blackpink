@@ -21,16 +21,13 @@ body  {
 
 img {
     border-radius: 10px;
+    max-width: 100%;
 }
 
 /* HEADER */
 .banner {   
     width: 800px;
     margin: 60px auto;
-}
-
-img {
-    max-width: 100%;
 }
 
 h1 {
@@ -102,10 +99,6 @@ p {
     width: 300px;
 }
 
-.photo img {
-    width: 100%;
-}
-
 .integranteCard, .albunCard {
     display: flex;
     justify-content: space-evenly;
@@ -139,4 +132,35 @@ p {
 .albunCard {
     margin-top: 60px;
     align-items: center;
+}
+
+
+/* GALERY */
+
+.photoGrid {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.photoGalery {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.photoGaleryWidth {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.photoGalery div {
+    background-color: var(--negative);
+}
+
+.photoVertical {
+    opacity: 0.4;
+}
+
+.photoVertical:hover {
+    opacity: 1;
 }
