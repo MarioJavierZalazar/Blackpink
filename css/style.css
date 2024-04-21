@@ -6,6 +6,8 @@
     --positive: #f2f2f2;
 }
 
+/* GENERALES */
+
 *{
     padding: 0;
     margin: 0;
@@ -24,6 +26,12 @@ img {
     max-width: 100%;
 }
 
+h1, h2, h3, h4, strong {
+    color: var(--primary);
+}
+
+
+
 /* HEADER */
 .banner {   
     width: 800px;
@@ -39,7 +47,10 @@ nav {
     margin-bottom: 60px;
 }
 
-nav ul {
+nav ul,
+.integranteCard, 
+.albunCard,
+.photoGrid {
     display: flex;
     justify-content: space-evenly;
 }
@@ -64,9 +75,6 @@ nav ul li a:hover {
 
 
 /* MAIN */
-h1, h2, h3, h4, strong {
-    color: var(--primary);
-}
 
 .container {
     max-width: 1000px;
@@ -92,27 +100,27 @@ p {
     margin-bottom: 20px;
 }
 
-
-/* INTEGRANTES */
-
-.photo {
-    width: 300px;
-}
-
-.integranteCard, .albunCard {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-}
-
-.description {
-    width: 600px;
-}
-
 .subtitle {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+
+
+
+/* INTEGRANTES */
+
+.photo {
+    width: 250px;
+}
+
+.integranteCard, .albunCard {
+    margin-bottom: 40px;
+}
+
+.description {
+    max-width: 600px;
+}
+
 
 
 /* HISTORIA */
@@ -138,13 +146,11 @@ p {
 /* GALERY */
 
 .photoGrid {
-    display: flex;
-    justify-content: space-evenly;
     text-align: center;
 }
 
 .photoGalery {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 
@@ -155,12 +161,4 @@ p {
 
 .photoGalery div {
     background-color: var(--negative);
-}
-
-.photoVertical {
-    opacity: 0.4;
-}
-
-.photoVertical:hover {
-    opacity: 1;
 }
