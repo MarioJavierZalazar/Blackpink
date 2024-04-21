@@ -30,6 +30,9 @@ h1, h2, h3, h4, strong {
     color: var(--primary);
 }
 
+abbr {
+    text-decoration: none;
+}
 
 
 /* HEADER */
