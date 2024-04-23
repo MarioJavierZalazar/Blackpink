@@ -69,7 +69,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--negative);
     font-weight: 900;
-    display: inline-block;
+    display: block;
     padding: 5px;
 }
 
