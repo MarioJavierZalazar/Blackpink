@@ -48,8 +48,8 @@ h1 {
 }
 
 nav {
-    background-color: var(--primary);
     margin-bottom: 60px;
+    background-color: var(--primary);
 }
 
 nav ul,
@@ -68,9 +68,12 @@ ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--negative);
-    font-weight: 900;
+
+    font-weight: bolder;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
+    min-width: 100px;
+    text-align: center;
 }
 
 nav ul li a:hover {
@@ -181,9 +184,6 @@ p {
     bottom: 20px;
     border: 2px solid var(--primary);
     background-color: var(--negative);
-}
-
-.btnUp a {
     text-decoration: none;
     color: var(--primary);
 }
