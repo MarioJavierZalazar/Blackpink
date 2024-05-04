@@ -23,8 +23,8 @@ body  {
 }
 
 img {
-    border-radius: 15px;
-    max-width: 100%;
+    border-radius: 5px;
+    width: 100%;
 }
 
 h1, h2, h3, h4, strong {
@@ -38,6 +38,11 @@ abbr {
 
 h1 {
     display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--negative);
 }
 
 
@@ -55,7 +60,8 @@ nav {
 nav ul,
 .integranteCard, 
 .albunCard,
-.photoGrid {
+.photoGrid,
+footer {
     display: flex;
     justify-content: space-evenly;
 }
@@ -66,8 +72,6 @@ ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--negative);
     font-weight: bolder;
     display: inline-block;
     padding: 5px 10px;
@@ -84,11 +88,11 @@ nav ul li a:hover {
 /* MAIN */
 
 .container {
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
 }
 
-section {
+.borderBotom {
     padding-bottom: 20px;
     border-bottom: solid 5px var(--primary);
     margin-bottom: 100px;
@@ -109,7 +113,7 @@ section {
 }
 
 
-p {
+.container section p {
     margin-bottom: 20px;
 }
 
@@ -126,12 +130,9 @@ p {
 
 /* INTEGRANTES */
 
-.photo {
-    width: 250px;
-}
 
 .integranteCard, .albunCard {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .description {
@@ -185,4 +186,33 @@ p {
     background-color: var(--negative);
     text-decoration: none;
     color: var(--primary);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary);
+    color: var(--negative);
+    align-items: center;
+    padding: 10px;
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+footer .datosPersonales p {
+    margin: 5px;
+}
+
+footer .datosPersonales p a:hover,
+footer .datosPersonales ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .datosPersonales ul li{
+    margin: 5px;
+}
+
+footer .datosFoto img {
+    border-radius: 50%;
 }
