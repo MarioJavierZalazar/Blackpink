@@ -68,7 +68,6 @@ ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--negative);
-
     font-weight: bolder;
     display: inline-block;
     padding: 5px 10px;
