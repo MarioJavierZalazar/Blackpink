@@ -216,3 +216,12 @@ footer .datosPersonales ul li{
 footer .datosFoto img {
     border-radius: 50%;
 }
+
+
+
+/* VER COMO INTEGARAR */
+
+iframe {
+    border: 0px;
+    width: 100%;
+}
