@@ -79,7 +79,8 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+.active {
     background-color: var(--negative);
     color: var(--primary);
 }
@@ -90,13 +91,9 @@ nav ul li a:hover {
 .container {
     width: 1000px;
     margin: auto;
-}
-
-.borderBotom {
-    padding-bottom: 20px;
-    border-bottom: solid 5px var(--primary);
     margin-bottom: 100px;
 }
+
 
 .title {
     text-align: center;
@@ -113,7 +110,7 @@ nav ul li a:hover {
 }
 
 
-.container section p {
+.container p {
     margin-bottom: 20px;
 }
 
@@ -161,6 +158,30 @@ nav ul li a:hover {
 }
 
 
+ /* RECITAL */
+
+ .recital{
+    margin-bottom: 150px;
+ }
+
+ .recital h3 {
+    display: none;
+    background-color: #f8a5be;
+ }
+
+ .recital .recitalBanner {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+ }
+
+ .recitalGalery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+ }
+
+
 /* GALERY */
 
 .photoGalery {
@@ -171,6 +192,116 @@ nav ul li a:hover {
 .photoGaleryWidth {
     width: 450px;
     margin-bottom: 30px;
+}
+
+/* FORM */
+
+form {
+    width: 700px;
+    margin: 40px auto;
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--negative);
+}
+
+label > strong {
+    color: var(--negative);
+}
+
+form .datosContatos {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .datosContatos input {
+    margin: 10px;
+    width: 45%;
+    padding: 5px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: var(--positive);
+    border-radius: 5px;
+}
+
+form .email input {
+    margin: 10px auto;
+    display: block;
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: var(--positive);
+    border-radius: 5px;
+}
+
+.fontFamilyMain {
+    font-family: inherit;
+}
+
+form .mensaje {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+form .mensaje textarea {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    background-color: var(--positive);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form .acuerdosYcondiciones {
+    margin-left: 20px;
+    font-size: 0.75rem;
+    margin-bottom: 40px;
+}
+
+form .acuerdosYcondiciones label>a {
+    text-decoration: underline;
+}
+
+form .acuerdosYcondiciones label>a:hover {
+    font-weight: bolder;
+}
+
+
+form .btnForm {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 2px solid var(--negative);
+    background-color: var(--negative);
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.btnForm:hover {
+    background-color: var(--primary);
+    border: 2px solid var(--negative);
+    color: var(--negative);
+}
+
+/* TERMINOS */
+
+main .container ol li {
+    margin: 20px 0 20px 70px;
+    
+}
+
+main .container ol li::marker {
+    color: var(--primary);
+    font-weight: bold;
 }
 
 
