@@ -23,6 +23,7 @@ body  {
 }
 
 img {
+    display: block;
     border-radius: 5px;
     width: 100%;
 }
@@ -57,7 +58,7 @@ nav {
     background-color: var(--primary);
 }
 
-nav ul,
+nav>ul,
 .integranteCard, 
 .albunCard,
 .photoGrid,
@@ -71,7 +72,7 @@ ul li {
     list-style: none;
 }
 
-nav ul li a {
+nav>ul li>a {
     font-weight: bolder;
     display: inline-block;
     padding: 5px 10px;
@@ -79,7 +80,7 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li a:hover,
+nav>ul li>a:hover,
 .active {
     background-color: var(--negative);
     color: var(--primary);
@@ -137,6 +138,56 @@ nav ul li a:hover,
 }
 
 
+/* Fotos polaron */
+
+.foto {
+    border: 10px solid #fff;
+    border-bottom: 60px solid #fff;
+    max-width: 270px;
+    position: relative;
+    border-radius: 5px;
+    transform: rotate(2deg);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 0.1rem #f8a5be);
+}
+
+.foto>div>img {
+    border-radius: 0;
+}
+
+.foto:nth-child(2n){
+    transform: rotate(-2deg);
+}
+
+
+.foto .signature {
+    position: absolute;
+    bottom: -40px;
+    transform: rotate(-20deg);
+    filter: drop-shadow(0 0 0.1rem #f8a5be);
+    
+}
+
+.foto:nth-child(2) .signature {
+    width: 80%;
+    bottom: -60px;
+    left: 20px;
+    transform: rotate(0deg);
+}
+
+.foto:nth-child(3) .signature {
+    bottom: -60px;
+    transform: rotate(-10deg);
+}
+
+.foto:nth-child(4) .signature {
+    width: 80%;
+    bottom: -80px;
+    right: -10px;
+    transform: rotate(-25deg);
+}
+
+
 
 /* HISTORIA */
 
@@ -156,6 +207,12 @@ nav ul li a:hover,
     margin-top: 60px;
     align-items: center;
 }
+
+iframe {
+    border: 0px;
+    width: 100%;
+}
+
 
 
  /* RECITAL */
@@ -348,11 +405,3 @@ footer .datosFoto img {
     border-radius: 50%;
 }
 
-
-
-/* VER COMO INTEGARAR */
-
-iframe {
-    border: 0px;
-    width: 100%;
-}
